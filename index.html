@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da velha</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>Jogo da velha</h1>
+
+    <div class="information info1"> <!-- Este é o campo de informações que fica abaixo do jogo da vela mostrando as informações de quem é a vez e quem venceu quandoo jogo terminar-->
+        <div class="information-item">
+            <div class="information-title">A vez é do:</div>
+            <div class="information-body player">--</div>
+        </div>
+    </div>
+
+    <div class="area"> <!-- Cada uma dessas divs são cada uma das 9 áreas para o usuário colocar as bolinhas ou X do jogo da velha-->
+        <div data-item="a1" class="item b r"></div>
+        <div data-item="a2" class="item b r"></div>
+        <div data-item="a3" class="item b"></div>
+        <div data-item="b1" class="item b r"></div>
+        <div data-item="b2" class="item b r"></div>
+        <div data-item="b3" class="item b"></div>
+        <div data-item="c1" class="item r"></div>
+        <div data-item="c2" class="item r"></div>
+        <div data-item="c3" class="item"></div>
+    </div>
+    
+    <div class="information info2">
+        <div class="information-item">
+            <div class="information-title">Vencedor:</div>
+            <div class="information-body result">--</div>
+        </div>
+    </div>
+
+    <button class="button-reset">Resetar</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
